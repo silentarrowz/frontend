@@ -1,0 +1,75 @@
+
+.selectContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper{
+  width: 36%;
+}
+
+.dropdown{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: 1px solid gainsboro;
+  min-height: 23px;
+  
+}
+
+.option{
+  padding-left: 5px;
+  border: none;
+  border-bottom: 1px solid gainsboro;
+}
+
+.option:hover{
+  background-color: lightgrey;
+}
+.selected{
+  background-color:aliceblue;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.labelsContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selectedLabel{
+  font-size: 13px; 
+  color: rgba(0,0,0,.85);
+  display: flex;
+  justify-content: space-between;
+  line-height: 22px;
+  background: #f5f5f5;
+  border: 1px solid #f0f0f0;
+  height: 20px;  
+  margin-right: 4px;
+  margin-bottom: 3px;
+}
+
+.selectedLabel .name{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;  
+}
+
+.selectedLabel .remove{
+  cursor: pointer;
+  width: 20px;
+}
+
+.noMatch{
+  text-align: center;
+  height: 50px;
+  margin-top: 22px;
+  font-weight: bold;
+}
+
+.input{
+  width: 100%;
+  border:none;
+  border-bottom: 1px solid slategray;
+}
